@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+:root {
+    --color-1: rgb(4, 209, 113);
+    --color-2: black;
+    --color-3: aqua;
+    --color-4: #fff;
+    --color-5: rgb(5, 253, 137);
+    --color-6: rgb(4, 204, 111);
+    --color-7: #4c6ef5;
+    --color-8: #354dad;
+    --color-9: rgba(0, 0, 0, 0.137);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* barra de navegação*/
+
+.nav-main {
+    width: 100%;
+    height: 100px;
+    background: var(--color-1);
+}
+
+.nav-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 160px;
+}
+
+.search {
+    width: 70%;
+    height: 35px;
+    display: none;
+    align-items: center;
+    border: 3px solid var(--color-4);
+    border-radius: 20px;
+}
+
+.search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-4);
+    padding: 0 20px;
+    outline: 0;
+    border: none;
+}
+
+.search input::placeholder {
+    color: var(--color-4);
+}
+
+.search img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.div-categories ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: var(--color-5);
+    padding: 20px;
+}
+
+.div-categories a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.div-categories a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------*/
+
+/* main e section*/
+
+main {
+    padding-top: 30px;
+}
+
+/* seção cards*/
+
+.cards {
+    width: 100%;
+}
+
+.cards-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--color-5);
+}
+
+.card button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: var(--color-4);
+    background: var(--color-5);
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: var(--color-6);
+}
+
+#details {
+    background: var(--color-4);
+    border: solid var(--color-3);
+    color: var(--color-3);
+}
+
+#details:hover {
+    background: var(--color-3);
+    border: none;
+    color: var(--color-4);
+}
+
+.card img {
+    width: 80%;
+    padding: 10px;
+}
+
+/*-----------------------------*/
+
+/* seção botões*/
+
+.pages {
+    width: 100%;
+}
+
+.pages-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pages-buutons {
+    display: flex;
+    gap: 10px;
+}
+
+.pages-buutons button {
+    width: 15px;
+}
+
+.pages-buutons a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+/*-----------------------------*/
+
+/*--------------------------------------------------*/
+
+/* rodapé*/
+
+footer {
+    width: 100%;
+    background: var(--color-5);
+}
+
+.footer-form {
+    width: 100%;
+   
+    padding: 20px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-form input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+}
+
+.footer-form button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--color-7);
+    border: none;
+    color: var(--color-4);
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background: var(--color-8);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.contact-text {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-text img {
+    width: 20px;
+}
+
+.payment-img img {
+    width: 30px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.midia {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.midia-img {
+    display: flex;
+    gap: 20px;
+}
+
+.midia-img img {
+    width: 30px;
+}
+
+/*--------------------------------------------------*/
+
+/* menu hamburger*/
+
+@media(max-width: 730px) {
+
+    /*.search {
+        display: none;
+    }*/
+
+    .div-categories {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .hamburger {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        z-index: 5;
+        right: 2rem;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all .7s;
+    }
+
+    .show-menu .hamburger {
+        position: fixed;
+        right: 16rem;
+    }
+
+    .line {
+        width: 100%;
+        height: .2rem;
+        padding: 1px;
+        border-radius: 10px;
+        background-color: var(--color-4);
+        box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+        transition: .7s;
+    }
+
+    .show-menu #line1 {
+        transform: rotate(45deg) translate(.4rem, .9rem);
+        background-color: var(--color-1);
+        box-shadow: none;
+    }
+
+    .show-menu #line2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .show-menu #line3 {
+        transform: rotate(-45deg) translate(.4rem, -.9rem);
+        background-color: var(--color-1);
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 20rem;
+        height: 100vh;
+        background: var(--color-4);
+        box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.582);
+        position: fixed;
+        top: 0;
+        right: -20rem;
+        transition: all .7s;
+    }
+
+    .show-menu .sidebar {
+        right: 0;
+    }
+
+    .categories-hamburger ul {
+        height: 100vh;
+        padding: 100px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .categories-hamburger a {
+        text-decoration: none;
+        color: var(--color-2);
+    }
+
+    .categories-hamburger a:hover {
+        text-decoration: underline;
+    }
+}
+
+/*--------------------------------------------------*/
+
+/* responsividade*/
+
+@media(min-width: 576px) {
+
+    .nav-content {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .search {
+        width: 50%;
+        display: flex;
+    }
+
+    /* main e section*/
+
+    /* seção cards*/
+
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 260px;
+        height: 410px;
+    }
+
+    .text {
+        width: 260px;
+        height: 310px;
+    }
+
+    /*-----------------------------*/
+
+
+    /*--------------------------------------------------*/
+
+    /* rodapé*/
+
+    .footer-form form {
+        width: 90%;
+        align-items: flex-end;
+    }
+
+    .contact-payment-midia {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*-----------------------------*/
+
+}
+
+@media(min-width: 768px) {
+
+
+    .nav-content {
+        justify-content: space-between;
+        padding: 0 10px 0 0;
+    }
+
+    .search {
+        width: 65%;
+    }
+
+    .div-categories {
+        position: relative;
+    }
+
+    /* main e section*/
+
+    /* seção cards*/
+
+    .cards-container {
+        margin-top: 80px;
+    }
+
+    .card {
+        width: 230px;
+        height: 400px;
+    }
+
+    .text {
+        width: 230px;
+        height: 300px;
+    }
+
+    /*-----------------------------*/
+
+    /* rodapé*/
+
+    .footer-form form {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-form input {
+        width: 45%;
+    }
+
+    /*-----------------------------*/
+
+}
+
+/*--------------------------------------------------*/
